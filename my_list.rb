@@ -1,13 +1,10 @@
 class MyList
+  includes MyEnumerable
+  def list(list)
+    @list = list
+  end
 
-includes MyEnumerable
-
-def list(list)
-  @list = list
-
+  def listEach(&block)
+    @list.each(&block)
+  end
 end
-
-def listEach(&block)
-  @list.each(&block)
-end
-
