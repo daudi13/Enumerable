@@ -4,7 +4,7 @@ class MyList
     @list = list
   end
 
-  def listEach(&block)
+  def listeach(&block)
     @list.each(&block)
   end
 end
